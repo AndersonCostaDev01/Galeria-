@@ -1,0 +1,86 @@
+:root{
+    --color-white: rgb(255, 255, 255);
+    --color-purple: rgb(95, 39, 205);
+    --color-purple2: rgb(77, 15, 201);
+    --color-gray: rgb(131, 131, 131);
+    --color-gray2: rgb(200, 214, 229);
+    --color-gray3: rgba(0, 0, 0, 0.7);
+    --color-green: rgb(0, 105, 35);
+    --color-red: rgb(255, 0, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 1rem 0;
+    display: flex;
+    border-bottom: 1rem solid var(--color-purple2);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+header button{
+    margin-left: 1rem;
+}
+form{
+    background-color: var(--color-gray2);
+    padding: 1.5rem 0;
+    text-align: center;
+    display: none;
+}
+form h2{
+    margin-bottom: 1rem;
+}
+input,
+button{
+    padding: 0.5rem;
+}
+button{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#cancel{
+    background-color: var(--color-red);
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 17.5rem;
+    overflow-y: hidden;
+}
+ul li img{
+    width: 100%;
+}
+.img-link{
+    padding: 1rem;
+    background-color: var(--color-gray3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 1000ms;
+}
+.img-link a{
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+ul li:hover .img-link{
+    opacity: 1;
+}

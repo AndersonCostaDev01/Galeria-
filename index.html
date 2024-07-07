@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres para o documento -->
+    <meta charset="UTF-8">
+    <!-- Define as configurações de visualização para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>jQuery</title>
+    <!-- Pré-conexão com a fonte do Google para melhorar o tempo de carregamento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link para importar a fonte Roboto do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <!-- Formulário para adicionar uma nova imagem -->
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <!-- Campo de entrada para a URL da nova imagem -->
+        <input type="url" required placeholder="URL da imagem" id="new-image"/>
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Adicionar</button>
+        <!-- Botão para cancelar e resetar o formulário -->
+        <button type="reset" id="cancel">Cancelar</button>
+    </form>
+    <!-- Lista de imagens existentes -->
+    <ul>
+        <!-- Primeiro item da lista -->
+        <li>
+            <img src="./images/foto1.jpg" alt="Pintura de um gato"/>
+            <div class="img-link">
+                <a href="./images/foto1.jpg" target="_blank" title="Quer ver imagem em tamanho real?">Ver texto em tamanho real</a>
+            </div>
+        </li>
+        <!-- Segundo item da lista -->
+        <li>
+            <img src="./images/foto2.jpg" alt="Pintura de um gato"/>
+            <div class="img-link">
+                <a href="./images/foto2.jpg" target="_blank" title="Quer ver imagem em tamanho real?">Ver texto em tamanho real</a>
+            </div>
+        </li>
+        <!-- Terceiro item da lista -->
+        <li>
+            <img src="./images/foto3.jpg" alt="Pintura de um gato"/>
+            <div class="img-link">
+                <a href="./images/foto3.jpg" target="_blank" title="Quer ver imagem em tamanho real?">Ver texto em tamanho real</a>
+            </div>
+        </li>
+    </ul>
+    <!-- Importa a biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- Importa o arquivo JavaScript externo -->
+    <script src="./scrippt.js"></script>
+</body>
+</html>
